@@ -1,0 +1,20 @@
+{
+    "data": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "Health & Safety",
+                "created_at": "2020-08-08 00:00:00",
+                "updated_at": "2020-08-08 00:00:00"
+            }
+        ],
+        "types": [
+            {
+                "id": 1,
+                "name": "General",
+                "created_at": "2020-08-08 00:00:00",
+                "updated_at": "2020-08-08 00:00:00"
+            }
+        ]
+    }
+}

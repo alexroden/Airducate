@@ -1,0 +1,154 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bulma
+@import './node_modules/bulma/bulma.sass';
+
+
+.va {
+    display: flex;
+    align-items: center;
+}
+
+:root {
+    --brandColor: hsl(166, 67%, 51%);
+    --background: rgb(247, 247, 247);
+    --textDark: hsla(0, 0%, 0%, 0.66);
+    --textLight: hsla(0, 0%, 0%, 0.33);
+}
+
+body {
+    background: var(--background);
+    height: 100vh;
+    color: var(--textDark);
+}
+
+.field:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.register {
+    margin-top: 50px;
+    background: white;
+    border-radius: 10px;
+}
+
+.left,
+.right {
+    padding: 4.5rem;
+}
+
+.left {
+    border-right: 5px solid var(--background);
+}
+
+.left .title {
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.left .colored {
+    color: var(--brandColor);
+    font-weight: 500;
+    margin-top: 1rem !important;
+    letter-spacing: -1px;
+}
+
+.left p {
+    color: var(--textLight);
+    font-size: 1.15rem;
+}
+
+.right .title {
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.right .description {
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+    color: var(--textLight);
+    font-size: 1.15rem;
+}
+
+.right small {
+    color: var(--textLight);
+}
+
+input {
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: var(--brandColor) !important;
+    box-shadow: 0 0 0 1px var(--brandColor) !important;
+}
+
+.fab,
+.fas {
+    color: var(--textLight);
+    margin-right: 1rem;
+}
+
+.tile {
+    transition: all 200ms ease;
+    .is-child:hover {
+        background-color: #00d1b2;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        .title {
+            color: white;
+        }
+    }
+}
+
+.modal {
+    display: flex;
+}
+
+.modal-background {
+    opacity: 0;
+}
+.modal-card {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 1s;
+}
+.modal-card.open {
+    transform: scale(1);
+}
+
+.complete-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00d1b2;
+    border-radius: 50%;
+}
+
+.fa-check {
+    color: white;
+    position: absolute;
+    right: -35px;
+    bottom: -15px;
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.box {
+    cursor: pointer;
+    position: relative;
+}
+
+.subtitle {
+    .sub-bg {
+        background-color: white;
+        padding: 5px 10px;
+    }
+}
